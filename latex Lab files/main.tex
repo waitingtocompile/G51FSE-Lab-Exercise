@@ -1,0 +1,32 @@
+%documentclass sets the look of the whole document. you can try changing it around with the two commented out examples.
+
+\documentclass{article}
+
+%\documentclass{proc}
+%\documentclass{beamer}
+
+
+\title{Here is an example of how to use sub-files in LaTeX}
+
+\author{XAM NOSLIW}
+
+\begin{document}
+\maketitle
+
+%to include the table of contents just uncoment the line below. The newpage line would move the start of the document on the next page after the table of contents.
+%\tableofcontents
+%\newpage
+
+\include{sections/SharedDoc}
+\newpage
+\include{sections/FirstPart}
+\newpage
+\include{sections/SecondPart}
+\newpage
+\include{sections/ThirdPart}
+\newpage
+\include{sections/FourthPart}
+
+
+
+\end{document}
